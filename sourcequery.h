@@ -29,7 +29,8 @@ const QByteArray S2A_RULES = "\x45";
 struct Players
 {
     QString name, timef;
-    int time, id, frags;
+    int id, frags;
+    float time;
 };
 
 class SourceQuery : public QObject
