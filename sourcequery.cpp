@@ -182,7 +182,7 @@ QVector <Players> SourceQuery::getPlayers()
         player.id = getByte(packets);
         player.name = getString(packets);
         player.frags = getLong(packets);
-        player.time = (int)getFloat(packets);
+        player.time = getFloat(packets);
 
         result.push_back(player);
     }
